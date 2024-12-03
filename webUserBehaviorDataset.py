@@ -4,7 +4,7 @@ import streamlit as st
 from google.colab import drive
 plt.rcParams["figure.max_open_warning"] = 100
 
-dados = pd.read_csv('/content/user_behavior_dataset.csv', sep = ",")
+dados = pd.read_csv('/UserBehavior/UserBehaviorDataset.csv', sep = ",")
 
 os_counts = dados['Operating System'].value_counts()
 device_counts = dados['Device Model'].value_counts()
